@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fastapi-template"
-version = "1.2.0"
+version = "1.3.0"
 
 authors = ["Donny Peeters <donny.peeters@hotmail.com>"]
 maintainers = ["Donny Peeters <donny.peeters@hotmail.com>"]
@@ -12,13 +12,14 @@ keywords = ["FastAPI", "Template"]
 
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 requests = "^2.26.0"
-fastapi = "^0.85.1"
-uvicorn = "^0.18.3"
+fastapi = "^0.91.0"
+uvicorn = "^0.20.0"
 SQLAlchemy = "^1.4.42"
-alembic = "^1.8.1"
-psycopg2-binary = "^2.9.4"
+alembic = "^1.9.3"
+psycopg2-binary = "^2.9.5"
+httpx = "^0.23.3"
 
 [tool.poetry.group.dev]
 optional = true
@@ -28,6 +29,7 @@ pytest = "^7.1.3"
 black = "^22.10.0"
 isort = "^5.10.1"
 mypy = "^0.982"
+psycopg2 = "^2.9.5"
 
 [build-system]
 requires = ["poetry-core"]

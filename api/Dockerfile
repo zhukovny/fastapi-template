@@ -1,4 +1,4 @@
-FROM python:3.9-slim as base
+FROM python:3.10 as base
 
 ARG PROJECT=api
 
@@ -9,7 +9,7 @@ USER user
 WORKDIR /home/user
 
 # Install Poetry.
-RUN --mount=type=cache,target=/root/.cache pip install --user poetry==1.2.0
+RUN --mount=type=cache,target=/root/.cache pip install --user poetry==1.3.0
 ENV \
     PATH="/home/user/.local/bin:/home/user/.venv/bin:${PATH}" \
     PYTHONUNBUFFERED=1 \
